@@ -29,6 +29,10 @@ const memu2 = [
 ]
 const Sidebar= () => {
     return(
+        <>
+        <div className ="logosidebar">
+            <img src="logods.png" width="100" height ="100"/>
+        </div>
         <div className = "allMenu">
             {memu2.map((p:any)=>{
                 return (<a href={p.to}>
@@ -41,6 +45,7 @@ const Sidebar= () => {
                 )
             })}
         </div>
+        </>
     )
 }
 export default Sidebar
