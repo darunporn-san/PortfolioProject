@@ -31,7 +31,7 @@ max-width: 100px;
   position: relative;
   top: 30%;
   background-color: black;
-  &:hover , &:focus{
+  &:hover {
     max-width: 300px;
     .menuName{
       display: initial
@@ -40,6 +40,10 @@ max-width: 100px;
       width: 100px;
       height: 100px;
     }
+.languageChange {
+  transform: translate(175%, 5%);
+}
+
   }
 
 
@@ -81,4 +85,14 @@ a .nameMenu {
 
 .menuName {
   display: none;
+}
+
+.languageChange {
+  position: absolute;
+  top: 95vh;
+  transform: translate(25%, -10%);
+  .btn {
+    font-size: 11px;
+    padding: 0.175rem 0.55rem;
+  }
 }

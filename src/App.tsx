@@ -7,8 +7,7 @@ import About from './modules/about'
 import Contact from './modules/contact'
 import Expirence from './modules/expirence'
 
-
-function App() {
+const  App = (props:any) =>{  
   return (
     <div className ="d-flex bd-highlight">
       <div className = "sidebar bd-highlight">
@@ -24,5 +23,7 @@ function App() {
     </div>
   )
 }
+
+
 
 export default App
