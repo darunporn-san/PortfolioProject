@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 const Menu= () => {
     return(
         <>
-            <Sidebar/>
+            {/* <Sidebar/> */}
         </>
     )
 }

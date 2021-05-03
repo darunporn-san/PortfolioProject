@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import i18n from '../../shared/lib'
+interface ISidebar{
+    active:boolean
+    changeLanguage?:(action:any)=>void
+}
 const memu2 = [
     {
         name:"Home",
@@ -34,13 +38,14 @@ const memu2 = [
         to:'/contact'
     }
 ]
-const Sidebar= (props:any) => {
+const Sidebar:React.FC<ISidebar>= (props:any) => {
     const { t } = useTranslation();
     const [active,setActive] = useState(true)
-    const changeLanguage = (lang:string) =>{
-        i18n.changeLanguage(lang)
-        setActive(!active)
-    }
+    // const changeLanguage = (lang:string) =>{
+    //     i18n.changeLanguage(lang)
+    //     setActive(!active)
+    // }
+
     return(
         <>
         <div className ="logosidebar">
@@ -61,8 +66,8 @@ const Sidebar= (props:any) => {
         </div>
         <div className = "languageChange">
             <div className="btn-group" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-primary" onClick = {changeLanguage.bind(this,'en')} disabled={active}>EN</button>
-                <button type="button" className="btn btn-primary" onClick = {changeLanguage.bind(this,'th')} disabled={!active}>TH</button>
+                <button type="button" className="btn btn-primary" onClick = {props.changeLanguage.bind(this,'en')} disabled={props.active}>EN</button>
+                <button type="button" className="btn btn-primary" onClick = {props.changeLanguage.bind(this,'th')} disabled={!props.active}>TH</button>
             </div>
         </div>
        
