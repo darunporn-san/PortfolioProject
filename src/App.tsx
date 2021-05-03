@@ -11,16 +11,28 @@ import { useTranslation } from 'react-i18next';
 import { useEffect ,useState} from 'react'
 
 const  App = (props:any) =>{  
-  const { t } = useTranslation();  
   const [active,setActive] = useState(true)
-
-  console.log('t',t('menu_contact'));
+  const [times,setTimes] = useState('')
   const changeLanguage = (lang:string) =>{
     i18n.changeLanguage(lang)
     localStorage.setItem('language',lang)
     setActive(!active)
+    localStorage.setItem('timestamp',JSON.stringify((new Date().getTime())))
   }
   useEffect(()=>{        
+    setTimes(localStorage.getItem('timestamp') || '');
+    if(localStorage !== null){
+      const diff = (new Date().getTime() - (+times))/(60*1000)
+      if(Math.floor(diff) > 30 && +times !== 0){
+        console.log('diff more than 30');
+        
+        localStorage.clear()
+      }else{
+        console.log('diff less than 30');
+
+      }
+    }
+    
     if(localStorage.getItem('language') === null){
         i18n.changeLanguage("en")
         setActive(true)
@@ -31,13 +43,8 @@ const  App = (props:any) =>{
         i18n.changeLanguage("th")
         setActive(false)
     }
-},[])
-  // useEffect(()=>{
-  //   if (!initialized) {
-  //     changeLanguage(localStorage.getItem("language") || "en");
-  //     setInitialized(true);
-  //   }
-  // })
+    
+},[times])
   return (
     <div className ="d-flex bd-highlight">
       <div className = "sidebar bd-highlight">
