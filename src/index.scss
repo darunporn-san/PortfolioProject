@@ -24,12 +24,30 @@ code {
 }
 
 .sidebar {
-  max-width: 300px;
+max-width: 100px;
+
   width: 100vw;
   height: 100vh;
   position: relative;
   top: 30%;
   background-color: black;
+  &:hover , &:focus{
+    max-width: 300px;
+    .menuName{
+      display: initial
+    }
+    .logo{
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
 }
 
 .logosidebar {
@@ -49,13 +67,18 @@ top: 20%;
   cursor: pointer;
 
   &:hover {
-    background-color: red;
+background-color: #1421f6;
+
   }
 }
 
-.nameMenu a {
+a .nameMenu {
   color: white;
   &:hover {
     color: white;
   }
+}
+
+.menuName {
+  display: none;
 }
