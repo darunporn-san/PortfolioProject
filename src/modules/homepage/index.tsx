@@ -9,9 +9,9 @@ interface IHomePage{
 const HomePage:React.FC<WithTranslation> = props =>{
     const { t } = useTranslation();    
     return(
-        <>
+        <div>
             {t('menu_home')}
-        </>
+        </div>
     )
 }
 export default withTranslation()(HomePage)

@@ -23,6 +23,25 @@ code {
     monospace;
 }
 
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  // .menumobile {
+  //   display: block;
+  // }
+}
+
+@media screen and (min-width: 481px) {
+  .menumobile {
+    display: none;
+  }
+}
+
 .sidebar {
 max-width: 100px;
 
@@ -30,6 +49,8 @@ max-width: 100px;
   height: 100vh;
   position: relative;
   top: 30%;
+z-index: 1;
+
   background-color: black;
   &:hover {
     max-width: 300px;
@@ -40,13 +61,11 @@ max-width: 100px;
       width: 100px;
       height: 100px;
     }
-.languageChange {
-  transform: translate(175%, 5%);
-}
+    .languageChange {
+      transform: translate(175%, 5%);
+    }
 
   }
-
-
 }
 
 .logo{
@@ -72,6 +91,9 @@ top: 20%;
 
   &:hover {
 background-color: #1421f6;
+// transition: transform 5s;
+// transform: translateX(100vw);
+
 
   }
 }
@@ -81,6 +103,7 @@ a .nameMenu {
   &:hover {
     color: white;
   }
+
 }
 
 .menuName {
@@ -96,3 +119,32 @@ a .nameMenu {
     padding: 0.175rem 0.55rem;
   }
 }
+.slideLoading {
+  width: 100%;
+  transform: translateX(-50vw);
+  background-color: red;
+}
+.squreLoading {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container {
+  // transform: translateX(325px);
+}
+
+.layoutPage {
+  display: block;
+}
+
+.closemobile {
+  display: none;
+}
+
+.activeClose {
+  display: block;
+  transform: translateX(-100%);
+  color: white;
+  z-index: 2;
+}
+
