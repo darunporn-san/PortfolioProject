@@ -25,15 +25,15 @@ const  App = (props:any) =>{
     var x  = document.getElementById('sidebar');
     var hoverInv:any = document.querySelectorAll("[id^=menuName]");
     if (x?.style.display === "" || x?.style.display === "none") {
-      x.style.display = "block";
+      x.style.display = "table";
       x.style.maxWidth = "200px"
     }else if(x?.style.display === "block"){
       x.style.display = "none";
     }
     document.getElementById('menumobile')!.style.display = 'none'
     document.getElementById('closemobile')!.classList.add('activeClose')
-    document.getElementById('layoutPage')!.style.transform = 'translateX(-100%)'
-
+    document.getElementById('layoutPage')!.style.transform = 'translateX(-60%)'
+    document.getElementById('layoutPage')!.style.position = 'initial'
     if(hoverInv.length > 0){
       document.getElementById('logos')!.style.width = "100px"
       document.getElementById('logos')!.style.height = "100px"

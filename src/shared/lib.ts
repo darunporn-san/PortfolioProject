@@ -8,7 +8,9 @@ const resources = {
           "menu_about": "About",
           "menu_skill": "Skill",
           "menu_expirence": "Expirence",
-          "menu_contact": "Contact"
+          "menu_contact": "Contact us",
+          "address_header":"Address",
+          "address":"1028 Chodsathidtham apartment, Hemwong 1, Dindaeng, Dindaeng, Bangkok 10400"
         }
     },
     th: {
@@ -17,7 +19,9 @@ const resources = {
           "menu_about": "เกี่ยวกับฉัน",
           "menu_skill": "ทักษะ",
           "menu_expirence": "ประสบการณ์",
-          "menu_contact": "การติดต่อ"
+          "menu_contact": "ติดต่อเรา",
+          "address_header":"ที่อยู่",
+          "address":"1028 โชติสถิตธรรมอพาร์ทเมนท์ ซ.เหมวงศ์ 1 แขวงดินแดง เขตดินแดง กรุงเทพมหานคร 10400"
         }
     }
 }
