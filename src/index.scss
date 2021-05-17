@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
 
 @font-face {
   font-family: "Material Icons";
@@ -73,6 +75,7 @@ max-width: 100px;
   top: 30%;
 z-index: 1;
 
+
   background-color: black;
   &:hover {
     max-width: 300px;
@@ -83,12 +86,30 @@ z-index: 1;
       width: 100px;
       height: 100px;
     }
-    .languageChange {
-      transform: translate(175%, 5%);
-    }
+.languageChange {
+  transform: translate(175%, 5%);
+}
+
+
+
+
+
+
+.imageHome {
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  left: 50%;
+  transform: translate(-35%, -70%);
+  img {
+    border-radius: 50%;
+  }
+}
+
 
   }
 }
+
 
 .logo{
   width: 50px;
@@ -113,6 +134,7 @@ top: 20%;
 
   &:hover {
 background-color: #1421f6;
+
 // transition: transform 5s;
 // transform: translateX(100vw);
 
@@ -219,4 +241,39 @@ width: 100%;
 
 .mapImage {
   margin-top: 48px;
+}
+
+.introduce {
+  border-left: 1px solid black;
+  height: 100vh;
+}
+
+.homepage {
+  .helloHome {
+    margin: auto;
+    label {
+      font-size: 10vw;
+      font-family: "Luckiest Guy", cursive;
+      margin-left: 4vw;
+    }
+    .iconHome {
+      margin-left: 10vw;
+      img {
+        margin: 0 1.5vw;
+      }
+    }
+  }
+  .imageHome {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-35%, -70%);
+    img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
