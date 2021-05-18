@@ -30,29 +30,35 @@ const HomePage:React.FC<WithTranslation> = props =>{
           });
     }
  
-    return(
-        <>
-            <div className="row homepage" id ="homepage">
-                <div className="col helloHome" id = "helloHome">
-                    <label>hello</label>
-                    <div className="iconHome">
-                    <a href="https://github.com/darunporn-san" target="_blank">
-                        <img src="GitHub-Mark-64px.png" width="50px" height="50px"/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/darunporn-santisawaddiwong-4a0721128/" target="_blank">
-                        <img src="linkedin.png" width="60px" height="60px"/>
-                    </a>
+    return (
+			<>
+				<div className="row homepage" id="homepage">
+					<div className="col helloHome" id="helloHome">
+						<label>hello</label>
+						<div className="iconHome">
+							<a href="https://github.com/darunporn-san" target="_blank">
+								<img src="GitHub-Mark-64px.png" width="50px" height="50px" />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/darunporn-santisawaddiwong-4a0721128/"
+								target="_blank">
+								<img src="linkedin.png" width="60px" height="60px" />
+							</a>
+						</div>
+					</div>
+					<div className="imageHome" id="imageHome">
+						<img src="homepic.jpg" id="imgHome" />
+					</div>
+					<div className="col introduce text-right my-auto">
+                        <div className="d-flex align-items-end flex-column" style={{height:'100vh'}}>
+                            <div className="fullname">{t('profile.firstname')}<br/>{t('profile.lastname')}</div>
+                            <div className="mt-auto positions text-center"><h1>&#123;	{t('work_details.position')} &#125;	</h1></div>
+
+                        </div>
                     </div>
-                </div>
-                <div className="imageHome" id ="imageHome">
-                    <img src="homepic.jpg" id="imgHome"/>
-                </div>
-                <div className="col introduce">
-                    right
-                </div>
-            </div>
-            {/* {t('menu_home')} */}
-        </>
-    )
+				</div>
+				{/* {t('menu_home')} */}
+			</>
+		);
 }
 export default withTranslation()(HomePage)

@@ -14,7 +14,8 @@ const resources = {
           "work_header": "Work Experience",
           "education_header" :  "Education",
           "profile":{
-            "name":"Darunporn Santisawaddiwong (Mint)",
+            "firstname":"Darunporn",
+            "lastname":"Santisawaddiwong",
             "sex":"female",
             "age":"26 years",
             "birthday_name":"Birthday",
@@ -27,10 +28,7 @@ const resources = {
             "mathayom":"Science-Math(SMA)",
             "gpa_name":"GPA"
           },
-          "home":{
-            "start":"Hi, I am",
-            "second":"I am a"
-          },
+          "home":"I am Darunporn Santisawaddiwong - but call me 'Mint'.I am a frontend developer.",
           "work_details":{
             "position":"Frontend Developer",
             "first_office":"2Bsimple",
@@ -63,10 +61,7 @@ const resources = {
             "mathayom":"วิทย์-คณิต",
             "gpa_name":"เกรด"
           },
-          "home":{
-            "start":"สวัสดี ฉันชื่อ",
-            "second":"ฉันเป็น"
-          },
+          "home":"สวัสดี ฉันชื่อ",
           "work_details":{
             "position":"นักพัฒนาหน้าเว็บไซต์",
             "first_office":"ทูบีซิมเปิ้ล",
