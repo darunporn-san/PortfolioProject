@@ -33,7 +33,8 @@ const resources = {
             "position":"Frontend Developer",
             "first_office":"2Bsimple",
             "second_office":"Softnix Technology",
-          }
+          },
+          "hello":"<hello world/>"
         }
     },
     th: {
@@ -48,7 +49,8 @@ const resources = {
           "work_header": "ประสบการณ์ทำงาน",
           "education_header" :  "การศึกษา",
           "profile":{
-            "name":"ดรัลพร สันติสวัสดิวงศ์ (มิ้นท์)",
+            "firstname":"ดรัลพร",
+            "lastname":"สันติสวัสดิวงศ์",
             "sex":"หญิง",
             "age":"26 ปี",
             "birthday_name":"วันเกิด",
@@ -66,7 +68,9 @@ const resources = {
             "position":"นักพัฒนาหน้าเว็บไซต์",
             "first_office":"ทูบีซิมเปิ้ล",
             "second_office":"ซอฟท์นิกซ์ เทคโนโลยี",
-          }
+          },
+          "hello":"สวัสดี"
+
         }
     }
 }

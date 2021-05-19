@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
 
 
 @font-face {
@@ -256,8 +258,9 @@ background-color: #b6e3e9;
     margin: auto;
 
     label {
-      font-size: 10vw;
-      font-family: "Luckiest Guy", cursive;
+font-size: 6vw;
+font-family: "Bungee Shade", cursive;
+
       margin-left: 4vw;
     }
     .iconHome {
@@ -273,19 +276,25 @@ background-color: #b6e3e9;
     top: 50%;
     left: 50%;
 
-    transform: translate(-35%, -70%);
+transform: translate(-45%, -40%);
+
     img {
       border-radius: 50%;
       width: 300px;
       height: 300px;
+border: 2px solid #ffae92;
+padding: 5px;
+
     }
+img:hover {
+  box-shadow: 0 0 10px 1px #dcf3fc;
+}
+
   }
   .introduce{
     margin: auto;
     padding-left: 0;
-    height: 100vh;
-    // padding-top: 48px !important;
-    // margin-bottom: 48px !important;
+
     background-color: white;
   }
 }
@@ -376,7 +385,8 @@ background-color: #b6e3e9;
 
 .positions {
   h1 {
-    font-size: 6vw;
+font-size: 5.4vw;
+
   }
   /* Fallback: Set a background color. */
   background-color: #ca4246;
@@ -438,5 +448,31 @@ background-color: #b6e3e9;
   }
   100% {
     background-size: 650%;
+  }
+}
+
+.iconHomePage {
+  background-color: #fcdee2;
+  width: 7vw;
+  height: 50vh;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  margin: auto;
+  padding: auto;
+  img {
+    width: 5vw;
+    margin-bottom: 20px;
+    height: 5vw;
+  }
+  .allIcon {
+    transform: translateY(20%);
+    // position: absolute;
+    // z-index: 1;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-55%, -70%);
   }
 }
