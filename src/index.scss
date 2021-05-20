@@ -5,6 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+
 
 
 
@@ -182,6 +184,9 @@ a .nameMenu {
 .layoutPage {
   display: block;
 width: 100%;
+padding-left: 100px;
+position: absolute;
+
 
 }
 .layoutPage .contacts {
@@ -468,11 +473,40 @@ font-size: 5.4vw;
     height: 5vw;
   }
   .allIcon {
-    transform: translateY(20%);
-    // position: absolute;
-    // z-index: 1;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-55%, -70%);
+transform: translateY(20%);
+
+
+
+
+
+
   }
+}
+
+.header_menu {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 5vw;
+}
+
+.card_skill {
+  width: calc(50vw - 35px );
+  max-height: calc(80vh);
+  .card_ui{
+    width: 80%;
+    margin: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    min-height: 50vh;
+
+  }
+  .ui_card_skill{
+    border: 1px solid black;
+    background-color: #022B36;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 70vh;
+}
 }

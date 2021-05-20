@@ -14,22 +14,22 @@ const HomePage:React.FC<WithTranslation> = props =>{
     var div = document.getElementById('sidebar')
     let image = document.getElementById('iconHomePage')
 
-    if(div !== null){
-        div.addEventListener("mouseover", function( event ) {
-            // image!.style.width = '250px'
-            // image!.style.height = '250px'
-            // document.getElementById('iconHomePage')!.style.width = "7vw";
-            document.getElementById('iconHomePage')!.style.transform = "translate(45%, -50%)";
-        });
+    // if(div !== null){
+    //     div.addEventListener("mouseover", function( event ) {
+    //         // image!.style.width = '250px'
+    //         // image!.style.height = '250px'
+    //         // document.getElementById('iconHomePage')!.style.width = "7vw";
+    //         document.getElementById('iconHomePage')!.style.transform = "translate(45%, -50%)";
+    //     });
 
-          div.addEventListener("mouseout", function( event ) {
-            // image!.style.width = '300px'
-            // image!.style.height = '300px'
-            // document.getElementById('iconHomePage')!.style.width = "10vw";
+    //       div.addEventListener("mouseout", function( event ) {
+    //         // image!.style.width = '300px'
+    //         // image!.style.height = '300px'
+    //         // document.getElementById('iconHomePage')!.style.width = "10vw";
 
-            document.getElementById('iconHomePage')!.style.transform = "translate(-30%, -50%)";
-          });
-    }
+    //         document.getElementById('iconHomePage')!.style.transform = "translate(-30%, -50%)";
+    //       });
+    // }
  
     return (
 			<>
