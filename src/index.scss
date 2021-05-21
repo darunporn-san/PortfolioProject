@@ -7,6 +7,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
+
 
 
 
@@ -484,10 +487,30 @@ transform: translateY(20%);
 }
 
 .header_menu {
-  font-family: "Saira Stencil One", cursive;
-  font-size: 5vw;
-}
+font-family: "Pacifico", cursive;
 
+  font-size: 5vw;
+
+}
+.card_skill_home{
+  font-family: "Pacifico", cursive;
+
+}
+.icon_card{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.list{
+  vertical-align: top;
+  font-size: 16px;
+  color: #75e8e7;
+
+  cursor: pointer;
+  // .list_select{
+  //   background-color: yellow;
+  // }
+}
 .card_skill {
   width: calc(50vw - 35px );
   max-height: calc(80vh);
@@ -501,7 +524,8 @@ transform: translateY(20%);
   }
   .ui_card_skill{
     border: 1px solid black;
-    background-color: #022B36;
+background-color: #2b3d50;
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -509,4 +533,15 @@ transform: translateY(20%);
     -o-border-radius: 10px;
     height: 70vh;
 }
+}
+
+.details_skill {
+  color: white;
+  max-height: 60vh;
+  overflow-y: auto;
+  font-family: "Chela One", cursive;
+  p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
