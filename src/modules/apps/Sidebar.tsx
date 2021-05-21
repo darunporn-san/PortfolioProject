@@ -45,32 +45,51 @@ const Sidebar:React.FC<ISidebar>= (props:any) => {
     //     setActive(!active)
     // }
 
-    return(
-        <>
-        <div className ="logosidebar">
-            <img className="logo" id = "logos" src="logods.png" />
-        </div>
-        <div className = "allMenu">
-            {memu2.map((p:any,i:number)=>{
-                return (
-                    <a href={p.to} style={{textDecoration:'none'}}>
-                        <div className = "nameMenu py-3">
-                            <i className="material-icons md-24" style={{verticalAlign:'top'}}>{p.icon}</i>
-                            <label className = "menuName ml-2 mb-0" style={{cursor:'pointer'}} id = {"menuName"+i}>{t(p.tran)}</label>
-                        </div> 
-                    </a>
-                   
-                )
-            })}
-        </div>
-        <div className = "languageChange" id = "languageChange">
-            <div className="btn-group" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-primary" onClick = {props.changeLanguage.bind(this,'en')} disabled={props.active}>EN</button>
-                <button type="button" className="btn btn-primary" onClick = {props.changeLanguage.bind(this,'th')} disabled={!props.active}>TH</button>
-            </div>
-        </div>
-       
-        </>
-    )
+    return (
+			<>
+				<div className="logosidebar">
+					<img className="logo" id="logos" src="/logods.png" />
+				</div>
+				<div className="allMenu">
+					{memu2.map((p: any, i: number) => {
+						return (
+							<a href={p.to} style={{ textDecoration: "none" }}>
+								<div className="nameMenu py-3">
+									<i
+										className="material-icons md-24"
+										style={{ verticalAlign: "top" }}>
+										{p.icon}
+									</i>
+									<label
+										className="menuName ml-2 mb-0"
+										style={{ cursor: "pointer" }}
+										id={"menuName" + i}>
+										{t(p.tran)}
+									</label>
+								</div>
+							</a>
+						);
+					})}
+				</div>
+				<div className="languageChange" id="languageChange">
+					<div className="btn-group" role="group" aria-label="Basic example">
+						<button
+							type="button"
+							className="btn btn-primary"
+							onClick={props.changeLanguage.bind(this, "en")}
+							disabled={props.active}>
+							EN
+						</button>
+						<button
+							type="button"
+							className="btn btn-primary"
+							onClick={props.changeLanguage.bind(this, "th")}
+							disabled={!props.active}>
+							TH
+						</button>
+					</div>
+				</div>
+			</>
+		);
 }
 export default Sidebar

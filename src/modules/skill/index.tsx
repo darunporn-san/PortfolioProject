@@ -53,88 +53,77 @@ const Skill:React.FC<ISkill> = props =>{
 }
 export default Skill
 
-const ICanDoIt = [
+const ILearning = [
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "fast api",
+		icon: "/skill/learn/fastapi.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "golang",
+		icon: "/skill/learn/golang.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "mongodb",
+		icon: "/skill/learn/mongodb.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "python",
+		icon: "/skill/learn/python.svg",
 	},
 ];
 
-const ILearning = [
+const ICanDoIt = [
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "html",
+		icon: "/skill/cando/html5.png",
+	},
+	{
+		name: "css",
+		icon: "/skill/cando/css.png",
+	},
+	{
+		name: "javascript",
+		icon: "/skill/cando/javascript.png",
+	},
+	{
+		name: "react",
+		icon: "/skill/cando/react.png",
+	},
+	{
+		name: "typescript",
+		icon: "/skill/cando/typescript.png",
+	},
+	{
+		name: "nextjs",
+		icon: "/skill/cando/nextjs.png",
+	},
+	{
+		name: "redux",
+		icon: "/skill/cando/redux.png",
+	},
+	{
+		name: "wordpress",
+		icon: "/skill/cando/wordpress.png",
 	},
 	{
 		name: "bootstrap",
-		icon: "bootstap.png",
+		icon: "/skill/cando/bootstap.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "git",
+		icon: "/skill/cando/git.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "firebase",
+		icon: "/skill/cando/firebase.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "heroku",
+		icon: "/skill/cando/heroku.png",
 	},
 	{
-		name: "bootstrap",
-		icon: "bootstap.png",
+		name: "ionic",
+		icon: "/skill/cando/ionic.png",
 	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
-	{
-		name: "bootstrap",
-		icon: "bootstap.png",
-	},
+	
 ];

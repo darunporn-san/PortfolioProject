@@ -68,7 +68,9 @@ const Card: React.FC<ICard> = (props) => {
 							</div>
 							<div style={{ color: "white" }}>{props.name}</div>
 						</div>
-						<div className="details_skill mt-4"><div className={props.list?'mx-3':''}>{props.data?.map((items:any,key:number)=>{
+						
+										{/* //row row-cols-2 */}
+						<div className="details_skill mt-4"><div className={props.list?'mx-3 row row-cols-4':'row row-cols-2'}>{props.data?.map((items:any,key:number)=>{
 							if(props.list){
 								return <GridItem icon={items.icon} name={items.name}/>
 							}else{
@@ -88,24 +90,29 @@ interface IListItem{
 	name:string
 }
 
-const ListItem:React.FC<IListItem> = (props:any) =>{
+const ListItem: React.FC<IListItem> = (props: any) => {
 	return (
 		<>
-			<div className="d-flex justify-content-between mx-5">
+			<div className="col">
+				<div className="d-flex justify-content-between mx-4 mb-4">
 				<img src={props.icon} id="imgHome"  width="50px" height="50px"/>
-				<p>{props.name}</p>
+				<p style={{fontSize:'1.5vw'}}>{props.name}</p>
 			</div>
+			</div>
+			
 		</>
-	)
-
-}
+	);
+};
 
 
 const GridItem:React.FC<IListItem> = (props:any) =>{
 	return (
 		<>
 			{/* <div className="d-flex align-items-start"> */}
+			<div className="col text-center mb-5 mt-1 grid_icon">
 				<img src={props.icon} id="imgHome"  width="100px" height="100px"/>
+				<span>{props.name}</span>
+			</div>
 			{/* </div> */}
 		</>
 	)
