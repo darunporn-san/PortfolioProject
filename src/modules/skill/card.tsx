@@ -52,31 +52,39 @@ const Card: React.FC<ICard> = (props) => {
 							<div className="icon_card list">
 								<i
 									className="list_select material-icons px-1"
-									onClick={props.handleDisplay?.bind(this,props.id)}
-									style={!props.list?{backgroundColor:'#798B9E'}:undefined}
-
-								>
+									onClick={props.handleDisplay?.bind(this, props.id)}
+									style={
+										!props.list ? { backgroundColor: "#798B9E" } : undefined
+									}>
 									list
 								</i>
 								<i
 									className="list_select material-icons px-1"
-									onClick={props.handleGrid?.bind(this,props.id)}
-									style={props.list?{backgroundColor:'#798B9E'}:undefined}
-									>
+									onClick={props.handleGrid?.bind(this, props.id)}
+									style={
+										props.list ? { backgroundColor: "#798B9E" } : undefined
+									}>
 									view_module
 								</i>
 							</div>
 							<div style={{ color: "white" }}>{props.name}</div>
 						</div>
-						
-										{/* //row row-cols-2 */}
-						<div className="details_skill mt-4"><div className={props.list?'mx-3 row row-cols-4':'row row-cols-2'}>{props.data?.map((items:any,key:number)=>{
-							if(props.list){
-								return <GridItem icon={items.icon} name={items.name}/>
-							}else{
-								return <ListItem icon={items.icon} name={items.name}/>
-							}
-						})}</div></div>
+
+						{/* //row row-cols-2 */}
+						<div className="details_skill mt-4">
+							<div
+								className={
+									props.list ? "mx-3 row row-cols-4" : "row row-cols-2"
+								}>
+								{props.data?.map((items: any, key: number) => {
+									if (props.list) {
+										return <GridItem icon={items.icon} name={items.name} />;
+									} else {
+										return <ListItem icon={items.icon} name={items.name} />;
+									}
+								})}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

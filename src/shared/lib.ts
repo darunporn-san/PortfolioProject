@@ -8,25 +8,40 @@ const resources = {
           "menu_about": "About",
           "menu_skill": "Skill",
           "menu_expirence": "Expirence",
+
           "menu_contact": "Contact us",
           "address_header":"Address",
           "address":"1028 Chodsathidtham apartment, Hemwong 1, Dindaeng, Dindaeng, Bangkok 10400",
           "work_header": "Work Experience",
-          "education_header" :  "Education",
+          "education_header" :  "Education Experience",
           "profile":{
             "firstname":"Darunporn",
-            "lastname":"Santisawaddiwong",
+            "lastname":"Santisawaddiwong" ,
             "sex":"female",
             "age":"26 years",
             "birthday_name":"Birthday",
             "birthday":"30/01/1995"
           },
           "education":{
-            "university":"Mahidol University",
-            "faculty":"Information and Communi",
-            "school":"Wichienmatu School",
-            "mathayom":"Science-Math(SMA)",
-            "gpa_name":"GPA"
+            "gpa_name":"GPA",
+            "stepOne":{
+              "university":"Mahidol University",
+              "faculty":"Faculty of Information and Communication Technology, Bachelor of Science (Multimedia)",
+              "date":"August 2013 - August 2018",
+              "detail":"I studied in Multimedia track.I learned about AR, VR, animation that it is up-to-date in present.I try using VR headset,leapmotion and kinect in project."
+            },
+            "stepTwo":{
+              "contest":"NSC contest 2017",
+              "title":"Healthcare, Healthtech, EKG, Medical Record , IOT",
+              "detail":"My group sent 'Amaze Biosign' proposal to succeed in the first-round match which is created application for measuring heart rate using IONIC platform."
+            },
+            "stepThree":{
+              "school":"Wichienmatu School",
+              "mathayom":"Science-Math(SMA)",
+              "date":'May 2007 - May 2013',
+              "detail":"I studied in SMT or science-mathematic syllabus that specify in science experiment and join with another school in same syllabus."
+            }
+            
           },
           "home":"I am Darunporn Santisawaddiwong - but call me 'Mint'.I am a frontend developer.",
           "work_details":{
@@ -57,11 +72,22 @@ const resources = {
             "birthday":"30/01/2538"
           },
           "education":{
-            "university":"มหาวิทยาลัยมหิดล",
-            "faculty":"คณะเทคโนโลยีสารสนเทศและการสื่อสาร",
-            "school":"โรงเรียนวิเชียรมาตุ",
-            "mathayom":"วิทย์-คณิต",
-            "gpa_name":"เกรด"
+            "gpa_name":"เกรด",
+            "stepOne":{
+              "university":"มหาวิทยาลัยมหิดล",
+              "faculty":"คณะเทคโนโลยีสารสนเทศและการสื่อสาร สาขาสื่อระบบผสม",
+              "date":"August 2013 - August 2018"
+            },
+            "stepTwo":{
+              "contest":"NSC contest 2017",
+              "title":"ดูแลสุขภาพ, เทคโนโลยีสุขภาพ, การวัดอัตราคลื่นไฟฟ้าหัวใจ, เทคโนโลยีอินเตอร์เน็ตที่เชื่อมต่อกับอุปกรณ์ต่างๆ"
+            },
+            "stepThree":{
+              "school":"โรงเรียนวิเชียรมาตุ",
+              "mathayom":"วิทย์-คณิต (สสวท.)",
+              "date":'May 2007 - May 2013'
+            }
+            
           },
           "home":"สวัสดี ฉันชื่อ",
           "work_details":{
