@@ -42,13 +42,14 @@
     "prettier": "./node_modules/.bin/prettier --semi=false --single-quote=true --write src/*.js",
     "start": "react-scripts start",
     "build": {
-      "command":"CI='' react-scripts build",
+      "command":"yarn run build",
       "commandOrigin":"ui",
       "publish":"/opt/build/repo/_site"
 
     },
-    "deploy": "react-scripts build && netlify deploy --prod",
-
+    "functions":{
+      "'*'":{}
+    },
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
