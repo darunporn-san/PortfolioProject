@@ -62,57 +62,75 @@ export default Expirence
 const WorkExperience = () =>{
     const { t } = useTranslation();
 
-    return(
-        <>
-            <div className="container">
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="main-timeline">
-                        <a href="#" className="timeline">
-                            <div className="timeline-icon"><i className="fa fa-globe"></i></div>
-                            <div className="timeline-content">
-                                <h3 className="title">Softnix Technology</h3>
-                                <p className="description">27 May 2019 - Present</p>
-                                <hr className="mt-0"/>
-                                <p className="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" className="timeline">
-                            <div className="timeline-icon"><i
-					className="material-icons"
-					style={{ verticalAlign: "top", fontSize: "80px" }}>
-					psychology
-				</i></div>
-                            <div className="timeline-content">
-                                <h3 className="title">Training 'Psychology and UX'</h3>
-                                <p className="description">22 September 2019</p>
-                                <hr className="mt-0"/>
-                                <p className="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" className="timeline">
-                            <div className="timeline-icon"><i className="fa fa-globe"></i></div>
-                            <div className="timeline-content">
-                                <h3 className="title">2B simple</h3>
-                                <p className="description">7 October 2018 - 1 April 2019</p>
+    return (
+			<>
+				<div className="container">
+					<div className="row">
+						<div className="col-md-12">
+							<div className="main-timeline">
+								<a href="#" className="timeline">
+									<div className="timeline-icon" style={{padding:'17px 5px'}}>
+										<img
+											className="logo"
+											src="/softnix-google.png"
+											style={{ width: "120px", height: "90px" }}
+										/>
+									</div>
+									<div className="timeline-content">
+										<h3 className="title">Softnix Technology</h3>
+										<p className="description">27 May 2019 - Present</p>
+										<hr className="mt-0" />
+										<p className="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Cupiditate ducimus officiis quod! Aperiam eveniet nam
+											nostrum odit quasi ullam voluptatum.
+										</p>
+									</div>
+								</a>
+								<a href="#" className="timeline">
+									<div className="timeline-icon">
+										<i
+											className="material-icons"
+											style={{ verticalAlign: "top", fontSize: "80px" }}>
+											psychology
+										</i>
+									</div>
+									<div className="timeline-content">
+										<h3 className="title">Training 'Psychology and UX'</h3>
+										<p className="description">22 September 2019</p>
+										<hr className="mt-0" />
+										<p className="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Cupiditate ducimus officiis quod! Aperiam eveniet nam
+											nostrum odit quasi ullam voluptatum.
+										</p>
+									</div>
+								</a>
+								<a href="#" className="timeline">
+									<div className="timeline-icon">
+                                    <i
+											className="material-icons"
+											style={{ verticalAlign: "top", fontSize: "80px" }}>
+											http
+										</i>									</div>
+									<div className="timeline-content">
+										<h3 className="title">2B simple</h3>
+										<p className="description">7 October 2018 - 1 April 2019</p>
 
-                                <hr className="mt-0"/>
-                                <p className="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ducimus officiis quod! Aperiam eveniet nam nostrum odit quasi ullam voluptatum.
-                                </p>
-                            </div>
-                        </a>
-                       
-                    </div>
-                </div>
-            </div>
-        </div> 
-        </>
-    )
+										<hr className="mt-0" />
+										<p className="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Cupiditate ducimus officiis quod! Aperiam eveniet nam
+											nostrum odit quasi ullam voluptatum.
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</>
+		);
 }
 
 
