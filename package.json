@@ -41,7 +41,12 @@
   "scripts": {
     "prettier": "./node_modules/.bin/prettier --semi=false --single-quote=true --write src/*.js",
     "start": "react-scripts start",
-    "build": "CI='' react-scripts build",
+    "build": {
+      "command":"CI='' react-scripts build",
+      "commandOrigin":"ui",
+      "publish":"/opt/build/repo/_site"
+
+    },
     "deploy": "react-scripts build && netlify deploy --prod",
 
     "test": "react-scripts test",
