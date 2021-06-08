@@ -43,6 +43,25 @@ const resources = {
             }
             
           },
+          "work":{
+            "position":"Frontend Developer",
+            "stepOne":{
+              "office":"Softnix Technology",
+              "date":"27 May 2019 - Present",
+              "detail":"I am responsibility for design user-friendly website and develop in frontend of website using react, typescript, redux and wordpress."
+            },
+            "stepTwo":{
+              "title":"Training 'Psychology and UX'",
+              "date":"22 September 2019",
+              "detail":"I learn about psychology principles that can be applied in designing digital products to match the User Experience (UX) and attract users to become a habit."
+            },
+            "stepThree":{
+              "office":"2B simple",
+              "date":"7 October 2018 - 1 April 2019",
+              "detail":"I am responsibility for develop in frontend of website using angular, wordpress and starting to learning in react.I design many prototype websites."
+            }
+            
+          },
           "home":"I am Darunporn Santisawaddiwong - but call me 'Mint'.I am a frontend developer.",
           "work_details":{
             "position":"Frontend Developer",

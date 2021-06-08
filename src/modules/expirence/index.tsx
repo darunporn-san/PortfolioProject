@@ -37,19 +37,28 @@ const Expirence:React.FC<IExpirence> = props =>{
     return (
 			<>
                     <div className="header_menu text-center">{selected?t("education_header"):t("work_header")}</div>
-                    <div style ={{position:'absolute',top:'3vh',right:'2vw'}}>
-                    <i
+                    <div className = "row"style ={{position:'absolute',top:'3vh',right:'2vw'}}>
+						<div className ="menuExperience">
+							<i
 					className="material-icons mx-3"
 					style={{ verticalAlign: "top", fontSize: "48px" ,cursor:"pointer"}}
                     onClick={()=>setSelected(false)}>
 					school
 				</i>
-                <i
+				<span>education</span>
+						</div>
+                    <div className ="menuWork">
+						<i
 					className="material-icons mx-3"
 					style={{ verticalAlign: "top", fontSize: "48px" ,cursor:"pointer"}}
                     onClick={()=>setSelected(true)}>
 					work
-				</i>                    </div>
+				</i>          
+				<span>work</span>
+
+					</div>
+
+                          </div>
 				{
                     !selected?<WorkExperience/>:<EducationExperience/>
                 }
@@ -69,7 +78,9 @@ const WorkExperience = () =>{
 						<div className="col-md-12">
 							<div className="main-timeline">
 								<a href="#" className="timeline">
-									<div className="timeline-icon" style={{padding:'17px 5px'}}>
+									<div
+										className="timeline-icon"
+										style={{ padding: "17px 5px" }}>
 										<img
 											className="logo"
 											src="/softnix-google.png"
@@ -77,14 +88,10 @@ const WorkExperience = () =>{
 										/>
 									</div>
 									<div className="timeline-content">
-										<h3 className="title">Softnix Technology</h3>
-										<p className="description">27 May 2019 - Present</p>
+										<h3 className="title">{t('work.stepOne.office')} ({t('work.position')})</h3>
+										<p className="description">{t('work.stepOne.date')}</p>
 										<hr className="mt-0" />
-										<p className="description">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Cupiditate ducimus officiis quod! Aperiam eveniet nam
-											nostrum odit quasi ullam voluptatum.
-										</p>
+										<p className="description">{t('work.stepOne.detail')}</p>
 									</div>
 								</a>
 								<a href="#" className="timeline">
@@ -96,32 +103,26 @@ const WorkExperience = () =>{
 										</i>
 									</div>
 									<div className="timeline-content">
-										<h3 className="title">Training 'Psychology and UX'</h3>
-										<p className="description">22 September 2019</p>
+										<h3 className="title">{t('work.stepTwo.title')}</h3>
+										<p className="description">{t('work.stepTwo.date')}</p>
 										<hr className="mt-0" />
-										<p className="description">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Cupiditate ducimus officiis quod! Aperiam eveniet nam
-											nostrum odit quasi ullam voluptatum.
-										</p>
+										<p className="description">{t('work.stepTwo.detail')}</p>
 									</div>
 								</a>
 								<a href="#" className="timeline">
 									<div className="timeline-icon">
-                                    <i
+										<i
 											className="material-icons"
-											style={{ verticalAlign: "top", fontSize: "80px" }}>
-											http
-										</i>									</div>
+											style={{ verticalAlign: "top", fontSize: "70px" }}>
+											devices
+										</i>{" "}
+									</div>
 									<div className="timeline-content">
-										<h3 className="title">2B simple</h3>
-										<p className="description">7 October 2018 - 1 April 2019</p>
+										<h3 className="title">{t('work.stepThree.office')} ({t('work.position')})</h3>
+										<p className="description">{t('work.stepThree.date')}</p>
 
 										<hr className="mt-0" />
-										<p className="description">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Cupiditate ducimus officiis quod! Aperiam eveniet nam
-											nostrum odit quasi ullam voluptatum.
+										<p className="description">{t('work.stepThree.detail')}
 										</p>
 									</div>
 								</a>
