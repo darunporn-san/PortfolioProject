@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
+
+
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+.layoutPage {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  position: absolute;
+}
+.address {
+  width: 100% !important;
+}
+.header {
+  margin-left: 0 !important;
+}
+.contactus,
+.address {
+  margin-top: 50px !important;
+  font-size: 20px !important;
+  padding: 0 20px;
+}
+.mapImage {
+  margin-top: 24px !important;
+}
+
+}
+
+@media screen and (min-width: 481px) {
+  .menumobile {
+    display: none;
+  }
+}
+
+.sidebar {
+max-width: 100px;
+
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 30%;
+z-index: 1;
+
+
+  background-color: black;
+  &:hover {
+    max-width: 300px;
+    .menuName{
+      display: initial
+    }
+    .logo{
+      width: 100px;
+      height: 100px;
+    }
+.languageChange {
+  transform: translate(175%, 5%);
+}
+
+
+
+
+
+
+.imageHome {
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  left: 50%;
+  transform: translate(-35%, -70%);
+  img {
+    border-radius: 50%;
+  }
+}
+
+
+  }
+}
+
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.logosidebar {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.allMenu {
+  position: relative;
+top: 20%;
+
+}
+
+.nameMenu {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+background-color: #1421f6;
+
+// transition: transform 5s;
+// transform: translateX(100vw);
+
+
+  }
+}
+
+a .nameMenu {
+  color: white;
+  &:hover {
+    color: white;
+  }
+
+}
+
+.menuName {
+  display: none;
+}
+
+.languageChange {
+  position: absolute;
+  top: 95vh;
+  transform: translate(25%, -10%);
+  .btn {
+    font-size: 11px;
+    padding: 0.175rem 0.55rem;
+  }
+}
+.slideLoading {
+  width: 100%;
+  transform: translateX(-50vw);
+  background-color: red;
+}
+.squreLoading {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.layoutPage {
+  display: block;
+width: 100%;
+padding-left: 100px;
+position: absolute;
+
+
+}
+.layoutPage .contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.closemobile {
+  display: none;
+}
+
+.activeClose {
+  display: block;
+  transform: translateX(-100%);
+  color: white;
+  z-index: 2;
+}
+
+
+.maps {
+  @media screen and (min-width: 1441px) {
+    width: 60%;
+    height: 60%;
+  }
+  @media screen and (max-width: 1440px) {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.contactus {
+  font-size: 24px;
+  a {
+    color: black;
+  }
+  &:hover {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+.contact_details {
+  font-family: "Kalam", cursive;
+}
+.contactus i {
+  color: #56cbf9;
+}
+
+.header {
+  margin-left: 30px;
+  font-size: 40px;
+  font-family: "Fredoka One", cursive;
+}
+
+.address {
+  width: 500px;
+  font-size: 24px;
+  margin: auto;
+}
+
+.mapImage {
+  margin-top: 48px;
+}
+
+.homepage {
+height: 100vh;
+background-color: #b6e3e9;
+
+
+
+  .helloHome {
+    margin: auto;
+
+    label {
+font-size: 6vw;
+font-family: "Bungee Shade", cursive;
+
+      margin-left: 4vw;
+    }
+    .iconHome {
+      margin-left: 10vw;
+      img {
+        margin: 0 1.5vw;
+      }
+    }
+  }
+  .imageHome {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+transform: translate(-45%, -40%);
+
+    img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+border: 2px solid #ffae92;
+padding: 5px;
+
+    }
+img:hover {
+  box-shadow: 0 0 10px 1px #dcf3fc;
+}
+
+  }
+  .introduce{
+    margin: auto;
+    padding-left: 0;
+
+    background-color: white;
+  }
+}
+
+// .fullname {
+//   font-size: 6em;
+//   background: -webkit-linear-gradient(#eee, #333);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+/* Style the rainbow text element. */
+.fullname {
+  font-size: 4vw;
+
+  font-family: "Nova Flat", cursive;
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #ca4246;
+  background-color: #ca4246;
+  background: conic-gradient(
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev-name 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+/* Add animation on hover. */
+.fullname:hover {
+  animation: rainbow-text-animation-name 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation-name {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev-name {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
+.positions {
+  h1 {
+font-size: 5.4vw;
+
+  }
+  /* Fallback: Set a background color. */
+  background-color: #ca4246;
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    45deg,
+    #ca4246 6.666%,
+    #e16541 6.666%,
+    #e16541 23.333%,
+    #f18f43 23.333%,
+    #f18f43 40%,
+    #8b9862 40%,
+    #8b9862 56.666%,
+    #476098 56.666%,
+    #476098 73.333%,
+    #a7489b 73.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: "Bebas Neue", cursive;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.positions:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+
+.iconHomePage {
+  background-color: #fcdee2;
+  width: 7vw;
+  height: 50vh;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  margin: auto;
+  padding: auto;
+  img {
+    width: 5vw;
+    margin-bottom: 20px;
+    height: 5vw;
+  }
+  .allIcon {
+transform: translateY(20%);
+
+
+
+
+
+
+  }
+}
+
+.header_menu {
+font-family: "Pacifico", cursive;
+
+  font-size: 5vw;
+
+}
+.card_skill_home{
+  font-family: "Pacifico", cursive;
+
+}
+.icon_card{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.list{
+  vertical-align: top;
+  font-size: 16px;
+  color: #75e8e7;
+
+  cursor: pointer;
+  // .list_select{
+  //   background-color: yellow;
+  // }
+}
+.card_skill {
+  width: calc(50vw - 35px );
+  max-height: calc(80vh);
+  .card_ui{
+    width: 80%;
+    margin: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    min-height: 50vh;
+
+  }
+  .ui_card_skill{
+    border: 1px solid black;
+background-color: #2b3d50;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 70vh;
+}
+}
+
+.details_skill {
+  color: white;
+  max-height: 60vh;
+  overflow-y: auto;
+  font-family: "Chela One", cursive;
+  p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.grid_icon {
+  img {
+    cursor: pointer;
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    margin-top: 10px;
+    padding: 0.55rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #000;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+      0 5px 15px rgba(0, 0, 0, 0.07);
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    span {
+      top: 100%;
+      left: 23%;
+      opacity: 0.9;
+    }
+  }
+}
