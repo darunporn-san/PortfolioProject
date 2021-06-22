@@ -42,7 +42,7 @@ const Expirence:React.FC<IExpirence> = props =>{
 							<i
 					className="material-icons mx-3"
 					style={{ verticalAlign: "top", fontSize: "48px" ,cursor:"pointer"}}
-                    onClick={()=>setSelected(false)}>
+                    onClick={()=>setSelected(true)}>
 					school
 				</i>
 				<span>education</span>
@@ -51,7 +51,7 @@ const Expirence:React.FC<IExpirence> = props =>{
 						<i
 					className="material-icons mx-3"
 					style={{ verticalAlign: "top", fontSize: "48px" ,cursor:"pointer"}}
-                    onClick={()=>setSelected(true)}>
+                    onClick={()=>setSelected(false)}>
 					work
 				</i>          
 				<span>work</span>
